@@ -78,6 +78,14 @@
 </div>
 
 <div class="lower-data">
+  <button (click) = "yesterday();" type="button" class="btn btn-primary btn-block" style="margin-top: 3px;">
+   Yesterday
+  </button>
+  <!-- &nbsp;&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; -->
+  
+  <button (click) = "openToast();" type="button" class="btn btn-primary btn-block" style="margin-top: 3px; margin-left:62%;">
+    Tomorrrow
+  </button>
 <div class="more_info">
   More Information
   
@@ -89,7 +97,7 @@
       <img src="../assets/humidity-icon-heating-and-air-conditioning-elements-icon-rain-icon-mD5QbkZ9_t.jpg" alt="">
       <span>Humidity</span>
     </div>
-    <div class="info-block-value">{{humidty_val}}</div>
+    <div class="info-block-value">{{humidty_val}} g.m-3</div>
   </div>
 
 
@@ -119,11 +127,12 @@
       <span>heatindex
       </span>
     </div>
-    <div class="info-block-value">{{ heatindex }}<div>
+    <div class="info-block-value">{{ heatindex }}°F<div>
   </div>
 </div>
 </div>
 </div>
+
 <!-- <div *ngFor=let item of stringObject>
  <p> {{item.key}} :{{item.value}}</p>
 </div> -->
